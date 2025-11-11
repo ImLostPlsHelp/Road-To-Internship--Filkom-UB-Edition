@@ -1,8 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://drpxrc8glunmo"]
+[gd_scene load_steps=3 format=3 uid="uid://drpxrc8glunmo"]
 
+[ext_resource type="Texture2D" uid="uid://dwxpw700l6iqb" path="res://WhatsApp Image 2025-11-06 at 19.57.56.jpeg" id="1_0e48y"]
 [ext_resource type="Texture2D" uid="uid://sb6yo73kmppu" path="res://icon.svg" id="1_wtcfe"]
 
 [node name="Node2D" type="Node2D"]
 
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture = ExtResource("1_0e48y")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-350, -289.00003)
+scale = Vector2(1.96875, 2.03125)
 texture = ExtResource("1_wtcfe")
