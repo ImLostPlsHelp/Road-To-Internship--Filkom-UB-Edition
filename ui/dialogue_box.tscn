@@ -1,14 +1,19 @@
 [gd_scene load_steps=3 format=3 uid="uid://b5m2qk2ojmag4"]
 
 [ext_resource type="Texture2D" uid="uid://drmdcs7xjo85c" path="res://assets/DialougeBOXES.png" id="1_2ix3t"]
-[ext_resource type="Script" uid="uid://k5o0qci4iyy6" path="res://ui/DialogueBux.gd" id="1_bode0"]
+[ext_resource type="Script" uid="uid://k5o0qci4iyy6" path="res://ui/DialogueBox.gd" id="1_bode0"]
 
 [node name="DialogueBox" type="Control"]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
 script = ExtResource("1_bode0")
+left_bubble_region = Rect2(79, 48, 46, 31)
+right_bubble_region = Rect2(134, 46, 46, 30)
 
 [node name="SpeakerName" type="Label" parent="."]
 layout_mode = 0
@@ -22,16 +27,16 @@ offset_bottom = 40.0
 
 [node name="Background" type="NinePatchRect" parent="."]
 layout_mode = 0
-offset_left = 2091.0
-offset_top = 371.0
-offset_right = 3480.0
-offset_bottom = 962.0
+offset_left = 2213.0
+offset_top = 266.0
+offset_right = 3602.0
+offset_bottom = 857.0
 texture = ExtResource("1_2ix3t")
-region_rect = Rect2(78.674965, 45.550636, 102.91776, 33.77487)
+region_rect = Rect2(0.33660126, 0.74674606, 358.94073, 177.34987)
 
-[node name="DialogueText" type="RichTextLabel" parent="Background"]
+[node name="DialogueText" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = -1567.0
-offset_top = -706.0
-offset_right = -1527.0
-offset_bottom = -666.0
+offset_left = 646.0
+offset_top = -440.0
+offset_right = 686.0
+offset_bottom = -400.0

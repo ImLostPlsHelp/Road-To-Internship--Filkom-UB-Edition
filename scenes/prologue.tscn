@@ -1,22 +1,29 @@
-[gd_scene load_steps=4 format=3 uid="uid://cyq6uvjrme5aj"]
+[gd_scene load_steps=5 format=3 uid="uid://cyq6uvjrme5aj"]
 
+[ext_resource type="Script" uid="uid://doasuyltkijts" path="res://scenes/prologue.gd" id="1_1wrf5"]
 [ext_resource type="Texture2D" uid="uid://c0w7pa5nx5y7l" path="res://assets/ruangan_dosen.jpg" id="1_8byya"]
 [ext_resource type="Texture2D" uid="uid://bgrg2beh436i2" path="res://assets/character/dosen/0.4.png" id="2_1wrf5"]
 [ext_resource type="PackedScene" uid="uid://b5m2qk2ojmag4" path="res://ui/dialogue_box.tscn" id="3_6e114"]
 
 [node name="Prologue" type="Node2D"]
 position = Vector2(199, 18)
+script = ExtResource("1_1wrf5")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(578, 530)
+position = Vector2(391, 216)
 texture = ExtResource("1_8byya")
 
-[node name="Dosen" type="Sprite2D" parent="."]
-position = Vector2(1014, 677)
+[node name="DosenSprite" type="Sprite2D" parent="."]
+position = Vector2(981.75, 389.75)
+scale = Vector2(0.63525385, 0.6000977)
 texture = ExtResource("2_1wrf5")
 
 [node name="DialogueBox" parent="." instance=ExtResource("3_6e114")]
-offset_left = -2368.0
-offset_top = -313.0
-offset_right = -2328.0
-offset_bottom = -273.0
+offset_left = -2446.0
+offset_top = -499.0
+offset_right = -2406.0
+offset_bottom = -459.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(394, 221)
+zoom = Vector2(0.595, 0.595)
