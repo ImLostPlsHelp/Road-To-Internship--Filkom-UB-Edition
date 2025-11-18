@@ -14,6 +14,10 @@ config/name="Road to Internship: FILKOM UB Edition"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GlobalState="*res://scripts/GlobalState.gd"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
