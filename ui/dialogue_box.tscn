@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5m2qk2ojmag4"]
+
+[ext_resource type="Texture2D" uid="uid://drmdcs7xjo85c" path="res://assets/DialougeBOXES.png" id="1_2ix3t"]
+
+[node name="DialogueBox" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 1567.0
+offset_top = 706.0
+offset_right = 2956.0
+offset_bottom = 1297.0
+texture = ExtResource("1_2ix3t")
+region_rect = Rect2(78.674965, 47.78105, 46.838737, 31.863083)
+
+[node name="SpeakerName" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="DialogueText" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ChoicesContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
