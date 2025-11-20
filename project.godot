@@ -22,9 +22,19 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
-directories/dch_directory={}
-directories/dtl_directory={}
-layout/style_directory={}
+directories/dch_directory={
+"dosen": "res://characters/dosen.dch",
+"mahasiswa": "res://characters/mahasiswa.dch"
+}
+directories/dtl_directory={
+"timeline_one": "res://timeline_one.dtl"
+}
+layout/style_directory={
+"": "res://styles/dialogue_characterOutside.tres",
+"dialogue_characterOutside": "res://styles/dialogue_characterOutside.tres"
+}
+layout/style_list=["res://styles/dialogue_characterOutside.tres"]
+layout/default_style="res://styles/dialogue_characterOutside.tres"
 
 [editor_plugins]
 
