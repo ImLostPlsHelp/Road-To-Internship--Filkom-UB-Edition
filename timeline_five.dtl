@@ -1,0 +1,123 @@
+[background arg="res://assets/background/scene_3_4/3.png" fade="0.0"]
+
+sistem: Saatnya membuat laporan dan menghubungi beliau untuk revisi!
+
+- Mulai Bimbingan Laporan
+
+[wait time="1.0"]
+
+# --- AWAL MINI-GAME REVISI ---
+
+set {attempt} = 0
+set {motivation} = 100
+set {pity} = false
+
+[background arg="res://assets/background/scene_revisi/1.png" fade="0.0"]
+sistem: Kamu mulai mengirim WA untuk minta revisi laporan.
+sistem: Kamu punya maksimal 10 percobaan. Motivasi\: {motivation}/100.
+
+- Kirim WA Revisi ke Dosen
+
+# --- LOOP REVISI ---
+[label revisi_loop]
+
+set {attempt} = {attempt} + 1
+
+sistem: Mengirim pesan revisi... (Percobaan {attempt}/10)
+[wait time="1.2"]
+
+# Random hasil (diselesaikan via GDScript, ini versi naratif)
+# Dialogic hanya menerima variabel {result}: "success" atau "fail"
+
+if ({attempt} == 1):
+    # tandai jika pertama gagal → pity system aktif
+    # handled by game logic
+endif
+
+# --- HASIL GAGAL ---
+if ({result} == "fail"):
+    
+    set {motivation} = {motivation} - 12
+    
+    sistem: Dosen pembimbing kamu sedang sibuk dengan berbagai alasan...
+    [wait time="0.8"]
+    
+    sistem: Motivasi menurun... ({motivation}/100)
+    
+    if ({motivation} <= 0):
+        
+        [background arg="res://assets/background/scene_revisi/2.png" fade="0.0"]
+        karakter: "AKU CAPEK, PAK!\"
+        
+        [wait time="1.0"]
+        
+        - Tarik napas dulu
+        
+        goto revisi_loop
+    endif
+    
+    if ({attempt} < 10):
+        - Coba Kirim Lagi
+        goto revisi_loop
+    endif
+
+endif
+
+# --- HASIL SUKSES ---
+if ({result} == "success"):
+    
+    [background arg="res://assets/background/scene_revisi/3.png" fade="0.0"]
+    
+    sistem: Dosen bersedia bertemu! Laporan kamu disetujui.
+    sistem: Kamu berhasil menyelesaikan tahap revisi 🎉
+    
+    - Lanjut Minta Tanda Tangan Kepala Departemen
+
+endif
+
+# --- PITY SYSTEM (percobaan berikutnya auto-sukses) ---
+if ({pity} == true and {attempt} > 1):
+    
+    [background arg="res://assets/background/scene_revisi/3.png" fade="0.0"]
+    sistem: Karena kegagalan di percobaan pertama, sistem kasihan padamu...
+    sistem: Revisi otomatis DISETUJUI pada percobaan ini.
+    
+    - Lanjut Minta Tanda Tangan Kepala Departemen
+
+endif
+
+
+# --- MINI-GAME KEJAR KEPALA DEPARTEMEN ---
+
+[background arg="res://assets/background/scene_lorong/1.png" fade="0.0"]
+
+sistem: Kamu harus mengejar Kepala Departemen di lorong FILKOM sebelum jam makan siang untuk minta tanda tangan.
+
+- Mulai Kejar-kejaran
+
+[label chase_start]
+sistem: Kamu berlari menyusuri lorong...
+sistem: Mencari Kepala Departemen...
+
+[wait time="1.0"]
+
+# Game logic menentukan hasil → {chase_result} = "success" / "fail"
+
+if ({chase_result} == "fail"):
+    
+    sistem: Kamu terlambat! Kepala Departemen sudah pergi makan siang.
+    - Coba Kejar Lagi
+    goto chase_start
+
+endif
+
+if ({chase_result} == "success"):
+    
+    [background arg="res://assets/background/scene_lorong/2.png" fade="0.3"]
+    
+    sistem: Kamu berhasil mengejar Kepala Departemen!
+    sistem: Tanda tangan diterima. Proses PKL selesai!
+    
+    - Selesai 🎉
+
+endif

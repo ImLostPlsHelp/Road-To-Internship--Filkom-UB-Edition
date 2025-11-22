@@ -24,9 +24,14 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 directories/dch_directory={
 "dosen": "res://characters/dosen.dch",
-"mahasiswa": "res://characters/mahasiswa.dch"
+"mahasiswa": "res://characters/mahasiswa.dch",
+"sistem": "res://characters/sistem.dch"
 }
 directories/dtl_directory={
+"condition_1": "res://timeline_four/condition_1.dtl",
+"condition_2": "res://timeline_four/condition_2.dtl",
+"timeline_five": "res://timeline_five.dtl",
+"timeline_four": "res://timeline_four.dtl",
 "timeline_one": "res://timeline_one.dtl",
 "timeline_three": "res://timeline_three.dtl"
 }
@@ -69,7 +74,13 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
-variables={}
+variables={
+"answer": "",
+"pembimbing_list": "[\"Dr. Budi\", \"Prof. Ani\", \"Ir. Candra\", \"Dr. Della\"]",
+"question_index": "",
+"score": 0,
+"selected_pembimbing": ""
+}
 glossary/default_case_sensitive=true
 
 [editor_plugins]
