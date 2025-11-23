@@ -84,3 +84,4 @@ label quiz_end
 [background arg="res://assets/background/scene_3_4/3.png" fade="0.0"]
 [voice path="res://assets/background/scene_3_4/akhirnya, sekian purnama.mp3" volume="0.0"]
 mahasiswa: Akhirnyaaa... Sekian Purnama!
+jump timeline_four/

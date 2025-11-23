@@ -28,10 +28,6 @@ scene = ExtResource("4_8i8nq")
 script = ExtResource("2_o8rdl")
 scene = ExtResource("5_mhgdb")
 
-[sub_resource type="Resource" id="Resource_qtcb2"]
-script = ExtResource("2_o8rdl")
-scene = ExtResource("6_pdkcx")
-
 [sub_resource type="Resource" id="Resource_v0mfw"]
 script = ExtResource("2_o8rdl")
 scene = ExtResource("7_lpogb")
@@ -48,19 +44,23 @@ scene = ExtResource("9_rkj7n")
 script = ExtResource("2_o8rdl")
 scene = ExtResource("10_hsfe7")
 
+[sub_resource type="Resource" id="Resource_o8rdl"]
+script = ExtResource("2_o8rdl")
+scene = ExtResource("6_pdkcx")
+
 [resource]
 script = ExtResource("11_b4wlh")
 name = "dialogue_characterOutside"
-layer_list = Array[String](["10", "11", "12", "13", "14", "15", "16", "17"])
+layer_list = Array[String](["10", "11", "12", "14", "15", "16", "17", "13"])
 layer_info = {
 "": SubResource("Resource_aw2uq"),
 "10": SubResource("Resource_tnhjp"),
 "11": SubResource("Resource_redaw"),
 "12": SubResource("Resource_k01a6"),
-"13": SubResource("Resource_qtcb2"),
+"13": SubResource("Resource_o8rdl"),
 "14": SubResource("Resource_v0mfw"),
 "15": SubResource("Resource_3gq3f"),
 "16": SubResource("Resource_3pdbg"),
 "17": SubResource("Resource_21wx7")
 }
-metadata/_latest_layer = ""
+metadata/_latest_layer = "12"

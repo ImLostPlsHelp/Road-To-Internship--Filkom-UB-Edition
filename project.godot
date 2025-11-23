@@ -25,7 +25,9 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 directories/dch_directory={
 "dosen": "res://characters/dosen.dch",
 "mahasiswa": "res://characters/mahasiswa.dch",
-"sistem": "res://characters/sistem.dch"
+"sistem": "res://characters/sistem.dch",
+"whatsapp_mahasiswa": "res://characters/whatsapp_mahasiswa.dch",
+"whatsapp_pembimbing": "res://characters/whatsapp_pembimbing.dch"
 }
 directories/dtl_directory={
 "condition_1": "res://timeline_four/condition_1.dtl",
@@ -37,12 +39,13 @@ directories/dtl_directory={
 }
 layout/style_directory={
 "": "res://styles/dialogue_characterOutside.tres",
-"dialogue_characterOutside": "res://styles/dialogue_characterOutside.tres"
+"dialogue_characterOutside": "res://styles/dialogue_characterOutside.tres",
+"percakapan whatsapp": "res://assets/background/scene_5/percakapan whatsapp.tres"
 }
-layout/style_list=["res://styles/dialogue_characterOutside.tres"]
+layout/style_list=["res://styles/dialogue_characterOutside.tres", "res://assets/background/scene_5/percakapan whatsapp.tres"]
 layout/default_style="res://styles/dialogue_characterOutside.tres"
 extensions_folder="res://addons/dialogic_additions"
-text/letter_speed=0.01
+text/letter_speed=0.03
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
 text/advance_delay=0.1
@@ -76,8 +79,13 @@ audio/channel_defaults={
 }
 variables={
 "answer": "",
+"attempt": 0.0,
+"chase_result": "",
+"motivation": 100.0,
 "pembimbing_list": "[\"Dr. Budi\", \"Prof. Ani\", \"Ir. Candra\", \"Dr. Della\"]",
+"pity": false,
 "question_index": "",
+"result": "",
 "score": 0,
 "selected_pembimbing": ""
 }
