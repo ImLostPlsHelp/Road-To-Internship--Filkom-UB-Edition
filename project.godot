@@ -35,6 +35,7 @@ directories/dtl_directory={
 "timeline_five": "res://timeline_five.dtl",
 "timeline_four": "res://timeline_four.dtl",
 "timeline_one": "res://timeline_one.dtl",
+"timeline_six": "res://timeline_six.dtl",
 "timeline_three": "res://timeline_three.dtl"
 }
 layout/style_directory={
@@ -84,6 +85,7 @@ variables={
 "motivation": 100.0,
 "pembimbing_list": "[\"Dr. Budi\", \"Prof. Ani\", \"Ir. Candra\", \"Dr. Della\"]",
 "pity": false,
+"qte_sukses": false,
 "question_index": "",
 "result": "",
 "score": 0,

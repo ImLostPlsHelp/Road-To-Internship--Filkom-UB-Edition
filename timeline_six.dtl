@@ -1,0 +1,16 @@
+[background arg="res://assets/background/scene_6/daftar_sidang.jpg" fade="0.0"]
+mahasiswa: Oke, daftar via Filkom Apps dulu.
+[wait time="1.0"]
+mahasiswa: Sip, jadwal sudah keluar. Tinggal nunggu waktunya sidang.
+[background arg="res://assets/background/scene_6/presentasi.jpg" fade="0.0"]
+mahasiswa: Baik kak, sekian dari presentasi saya, apakah bapak memliki pertanyaan?
+label mulai_sidang (mulai_sidang)
+\dosen: Hmmm, mengapa anda menggunakan algoritma ini, bukannya lebih baik menggunakan algoritma yang lain?
+[signal arg="mulai_qte"]
+[wait time="3.0"]
+if {qte_sukses} == true:
+	[background arg="res://assets/background/scene_6/presentasi_success.jpg" fade="0.0"]
+	\dosen: Bagus nak, kamu lulus!
+else:
+	\dosen: Hmm, kamu gugup ya nak, coba lagi.
+	jump timeline_six/mulai_sidang
