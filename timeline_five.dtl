@@ -56,8 +56,8 @@ choice: <Empty Text Event>
 - Times New Roman
     mahasiswa: Ohh bukan pakai Times New Roman ta?
     jump soal_4
-- Arial:
-    mahasiswa: Lah bukan Arial juga??
+- Arial
+    mahasiswa: Lah bukan Arial ya??
     jump soal_4
 
 label soal_5
@@ -65,7 +65,7 @@ sistem: Untuk daftar pustaka, gaya penulisan yang benar apa?
 choice: <Empty Text Event>
 - APA Style
     mahasiswa: Ooo bukan yang ini ya
-    jump selesai
+    jump soal_5
 - MLA Style
     mahasiswa: Temenku bilang ini, ternyata salah ya…
     jump soal_5
