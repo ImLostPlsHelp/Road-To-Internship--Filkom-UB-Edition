@@ -1,14 +1,34 @@
 [gd_scene load_steps=3 format=3 uid="uid://drpxrc8glunmo"]
 
-[ext_resource type="Texture2D" uid="uid://dwxpw700l6iqb" path="res://WhatsApp Image 2025-11-06 at 19.57.56.jpeg" id="1_0e48y"]
-[ext_resource type="Texture2D" uid="uid://sb6yo73kmppu" path="res://icon.svg" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://8ewqtgndo7sy" path="res://scripts/email_minigame.gd" id="1_wtcfe"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_y32ns"]
+font_size = 40
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-texture = ExtResource("1_0e48y")
+[node name="Kotak_Email" type="Panel" parent="."]
+visible = false
+offset_left = 160.0
+offset_top = 71.0
+offset_right = 978.0
+offset_bottom = 578.0
+script = ExtResource("1_wtcfe")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-350, -289.00003)
-scale = Vector2(1.96875, 2.03125)
-texture = ExtResource("1_wtcfe")
+[node name="LabelAngka" type="Label" parent="Kotak_Email"]
+layout_mode = 0
+offset_left = 393.0
+offset_top = 235.0
+offset_right = 433.0
+offset_bottom = 290.0
+text = "0"
+label_settings = SubResource("LabelSettings_y32ns")
+horizontal_alignment = 1
+
+[node name="TombolRefresh" type="Button" parent="Kotak_Email"]
+layout_mode = 0
+offset_left = 350.0
+offset_top = 348.0
+offset_right = 484.0
+offset_bottom = 407.0
+text = "Refresh Inbox"
