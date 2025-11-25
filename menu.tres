@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=13 format=3 uid="uid://cqhrq1sy2qypa"]
+
+[ext_resource type="PackedScene" uid="uid://syki6k0e6aac" path="res://addons/dialogic/Modules/DefaultLayoutParts/Base_TextBubble/text_bubble_base.tscn" id="1_5sodv"]
+[ext_resource type="Script" uid="uid://bwg6yncmh2cml" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="2_6gbjh"]
+[ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="3_1yfpq"]
+[ext_resource type="PackedScene" uid="uid://d2it0xiap3gnt" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/text_bubble_layer.tscn" id="4_8poug"]
+[ext_resource type="PackedScene" uid="uid://dhk6j6eb6e3q" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn" id="5_6gbjh"]
+[ext_resource type="Script" uid="uid://dv08k6ljua6fm" path="res://addons/dialogic/Resources/dialogic_style.gd" id="5_8w5jd"]
+[ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="6_1yfpq"]
+
+[sub_resource type="Resource" id="Resource_tq6xm"]
+script = ExtResource("2_6gbjh")
+scene = ExtResource("1_5sodv")
+
+[sub_resource type="Resource" id="Resource_4p5qa"]
+script = ExtResource("2_6gbjh")
+scene = ExtResource("3_1yfpq")
+
+[sub_resource type="Resource" id="Resource_qcync"]
+script = ExtResource("2_6gbjh")
+scene = ExtResource("4_8poug")
+
+[sub_resource type="Resource" id="Resource_1yfpq"]
+script = ExtResource("2_6gbjh")
+scene = ExtResource("5_6gbjh")
+overrides = {
+"font_size_custom": "40.0"
+}
+
+[sub_resource type="Resource" id="Resource_8poug"]
+script = ExtResource("2_6gbjh")
+scene = ExtResource("6_1yfpq")
+
+[resource]
+script = ExtResource("5_8w5jd")
+name = "menu"
+layer_list = Array[String](["13", "10", "11", "12"])
+layer_info = {
+"": SubResource("Resource_tq6xm"),
+"10": SubResource("Resource_4p5qa"),
+"11": SubResource("Resource_qcync"),
+"12": SubResource("Resource_1yfpq"),
+"13": SubResource("Resource_8poug")
+}
+metadata/_latest_layer = "12"

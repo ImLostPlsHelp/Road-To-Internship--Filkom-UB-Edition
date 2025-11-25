@@ -32,6 +32,7 @@ directories/dch_directory={
 directories/dtl_directory={
 "condition_1": "res://timeline_four/condition_1.dtl",
 "condition_2": "res://timeline_four/condition_2.dtl",
+"start": "res://start.dtl",
 "timeline_five": "res://timeline_five.dtl",
 "timeline_four": "res://timeline_four.dtl",
 "timeline_one": "res://timeline_one.dtl",
@@ -41,9 +42,10 @@ directories/dtl_directory={
 layout/style_directory={
 "": "res://styles/dialogue_characterOutside.tres",
 "dialogue_characterOutside": "res://styles/dialogue_characterOutside.tres",
+"menu": "res://menu.tres",
 "percakapan whatsapp": "res://assets/background/scene_5/percakapan whatsapp.tres"
 }
-layout/style_list=["res://styles/dialogue_characterOutside.tres", "res://assets/background/scene_5/percakapan whatsapp.tres"]
+layout/style_list=["res://styles/dialogue_characterOutside.tres", "res://assets/background/scene_5/percakapan whatsapp.tres", "res://menu.tres"]
 layout/default_style="res://styles/dialogue_characterOutside.tres"
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.03
