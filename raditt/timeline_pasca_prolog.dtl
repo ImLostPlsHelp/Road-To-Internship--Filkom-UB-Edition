@@ -1,0 +1,43 @@
+[background arg="res://raditt/assets/pasca_prolog/Gemini_Generated_Image_48f00p48f00p48f0.png" fade="2.0"]
+[wait time="1.3"]
+join narrator center
+narrator: MC berdiri kaku di hadapan seorang dosen. Tatapan dosen itu menusuk seperti membaca semua kebohongan yang belum pernah MC ucapkan.
+leave narrator
+[wait time="1.3"]
+\dosen: PKL-mu… KAPAN?
+\dosen: Kamu sudah di ambang kelulusan.
+[background arg="res://raditt/assets/pasca_prolog/Gemini_Generated_Image_97zhmx97zhmx97zh.png" fade="0.0"]
+\dosen: Segera daftar PKL! SEKARANG!
+[background arg="res://raditt/assets/pasca_prolog/Gemini_Generated_Image_b3bzunb3bzunb3bz.png" fade="1.5"]
+[wait time="1.0"]
+mahasiswa: Ampun pakkk—?!
+[background arg="res://raditt/assets/pasca_prolog/Gemini_Generated_Image_gkkfgkgkkfgkgkkf.png" fade="0.0"]
+mahasiswa: Astaga… mimpi ya?
+[background arg="res://raditt/assets/pasca_prolog/Gemini_Generated_Image_vfufp2vfufp2vfuf.png" fade="0.0"]
+mahasiswa: Aku cuma ketiduran sebentar doang padahal…
+[background arg="res://raditt/assets/pasca_prolog/Gemini_Generated_Image_rgpsllrgpsllrgps.png" fade="0.0"]
+mahasiswa: Oke… saatnya saya melanjutkan pendaftaran PKL. Nggak bisa kabur lagi dari takdir ini.
+label choice_register
+- Lanjut Daftar PKL
+	[background arg="res://raditt/assets/pasca_prolog/Gemini_Generated_Image_ku6craku6craku6c.png" fade="1.5"]
+	[wait time="1.5"]
+	mahasiswa: Sepertinya saya harus memasukkan total sks saya terlebih dahulu
+	label input_total_sks
+	[text_input text="Masukkan total sks anda" var="total_sks" placeholder="Masukkan total sks anda"]
+	if {total_sks} >= "96":
+		[wait time="1.0"]
+		[background arg="res://raditt/assets/pasca_prolog/Gemini_Generated_Image_es803hes803hes80.png" fade="0.0"]
+		mahasiswa: HOREE!! TOTAL SKSKU SUDAH MEMENUHI SYARAT
+		jump timeline_one/
+	else:
+		[wait time="1.0"]
+		[background arg="res://raditt/assets/pasca_prolog/Gemini_Generated_Image_u3vyztu3vyztu3vy.png" fade="0.0"]
+		mahasiswa: yahh, total sksku belum memenuhi syarat
+		jump input_total_sks
+- Nanti aja
+	[style name="character_outside"]
+	join dosen (angry) center
+	\dosen (angry): APAAA?? NANTI AJA???
+	[background arg="res://raditt/assets/pasca_prolog/Gemini_Generated_Image_1vxfqw1vxfqw1vxf.png" fade="0.0"]
+	leave dosen
+	jump choice_register

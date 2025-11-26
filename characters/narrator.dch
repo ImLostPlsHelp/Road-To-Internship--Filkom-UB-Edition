@@ -7,28 +7,19 @@
 "prefix": "",
 "sound_mood_default": "",
 "sound_moods": {},
-"style": "",
+"style": "character_outside",
 "suffix": ""
 },
-&"default_portrait": "neutral",
+&"default_portrait": "smile_narrator",
 &"description": "",
-&"display_name": "dosen",
+&"display_name": "narrator",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"angry": {
+"smile_narrator": {
 "export_overrides": {
-"image": "\"res://raditt/assets/pasca_prolog/Gemini_Generated_Image_fz9mwrfz9mwrfz9m-removebg-preview.png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-},
-"neutral": {
-"export_overrides": {
-"image": "\"res://assets/character/dosen/0.1.png\""
+"image": "\"res://raditt/assets/Gemini_Generated_Image_ms7wzcms7wzcms7w-removebg-preview.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -36,5 +27,5 @@
 "scene": ""
 }
 },
-&"scale": 1.0
+&"scale": 0.75
 }

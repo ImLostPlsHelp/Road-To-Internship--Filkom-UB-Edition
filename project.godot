@@ -23,8 +23,10 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"dadu": "res://characters/dadu.dch",
 "dosen": "res://characters/dosen.dch",
 "mahasiswa": "res://characters/mahasiswa.dch",
+"narrator": "res://characters/narrator.dch",
 "sistem": "res://characters/sistem.dch",
 "whatsapp_mahasiswa": "res://characters/whatsapp_mahasiswa.dch",
 "whatsapp_pembimbing": "res://characters/whatsapp_pembimbing.dch"
@@ -35,18 +37,21 @@ directories/dtl_directory={
 "start": "res://start.dtl",
 "timeline_five": "res://timeline_five.dtl",
 "timeline_four": "res://timeline_four.dtl",
-"timeline_one": "res://timeline_one.dtl",
+"timeline_one": "res://raditt/timeline_one.dtl",
+"timeline_pasca_prolog": "res://raditt/timeline_pasca_prolog.dtl",
+"timeline_prolog": "res://raditt/timeline_prolog.dtl",
 "timeline_six": "res://timeline_six.dtl",
-"timeline_three": "res://timeline_three.dtl",
-"timeline_two": "res://timeline_two.dtl"
+"timeline_three": "res://timeline_three.dtl"
 }
 layout/style_directory={
 "": "res://styles/dialogue_characterOutside.tres",
+"character_inside": "res://styles/character_inside.tres",
+"character_outside": "res://styles/character_outside.tres",
 "dialogue_characterOutside": "res://styles/dialogue_characterOutside.tres",
 "menu": "res://menu.tres",
 "percakapan whatsapp": "res://assets/background/scene_5/percakapan whatsapp.tres"
 }
-layout/style_list=["res://styles/dialogue_characterOutside.tres", "res://assets/background/scene_5/percakapan whatsapp.tres", "res://menu.tres"]
+layout/style_list=["res://styles/dialogue_characterOutside.tres", "res://assets/background/scene_5/percakapan whatsapp.tres", "res://menu.tres", "res://styles/character_outside.tres", "res://styles/character_inside.tres"]
 layout/default_style="res://styles/dialogue_characterOutside.tres"
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.03
@@ -85,6 +90,7 @@ variables={
 "answer": "",
 "attempt": 0.0,
 "chase_result": "",
+"count_throw": 0,
 "motivation": 100.0,
 "pembimbing_list": "[\"Dr. Budi\", \"Prof. Ani\", \"Ir. Candra\", \"Dr. Della\"]",
 "pity": false,
@@ -92,7 +98,9 @@ variables={
 "question_index": "",
 "result": "",
 "score": 0,
-"selected_pembimbing": ""
+"selected_dadu": "",
+"selected_pembimbing": "",
+"total_sks": ""
 }
 glossary/default_case_sensitive=true
 
