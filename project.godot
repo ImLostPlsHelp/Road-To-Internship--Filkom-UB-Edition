@@ -32,13 +32,13 @@ directories/dch_directory={
 "whatsapp_pembimbing": "res://characters/whatsapp_pembimbing.dch"
 }
 directories/dtl_directory={
-"timeline/start": "res://timeline/start.dtl",
 "timeline/timeline_five": "res://timeline/timeline_five.dtl",
 "timeline/timeline_four": "res://timeline/timeline_four.dtl",
 "timeline/timeline_one": "res://timeline/timeline_one.dtl",
 "timeline/timeline_pasca_prolog": "res://timeline/timeline_pasca_prolog.dtl",
 "timeline/timeline_prolog": "res://timeline/timeline_prolog.dtl",
 "timeline/timeline_six": "res://timeline/timeline_six.dtl",
+"timeline/timeline_start": "res://timeline/timeline_start.dtl",
 "timeline/timeline_three": "res://timeline/timeline_three.dtl",
 "timeline_one": "res://raditt/timeline_one.dtl",
 "timeline_pasca_prolog": "res://raditt/timeline_pasca_prolog.dtl",

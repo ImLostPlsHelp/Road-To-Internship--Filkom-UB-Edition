@@ -17,6 +17,7 @@ label Sukses
 [background arg="res://assets/background/pkl_sukses.jpg" fade="0.0"]
 mahasiswa: Akhirnya! PKL udah selesai, sekarang tinggal skripsi.
 mahasiswa: Tapi itu urusan nanti, malam ini aku harus selebrasi dulu!
+[signal arg="restart_game"]
 [end_timeline]
 label Gagal
 [background arg="res://assets/background/presentasi_fail.jpg" fade="0.0"]
