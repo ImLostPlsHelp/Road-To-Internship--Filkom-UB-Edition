@@ -1,0 +1,9 @@
+[background arg="res://assets/prolog/filkom.jpg" fade="0.0"]
+[style name="character_outside"]
+join narrator center
+narrator: Suatu hari, di Fakultas Ilmu Komputer, suasana kampus tampak seperti biasa.
+narrator: Mahasiswa berlalu-lalang, beberapa panik mengejar deadline, sebagian lain berkeliaran mencari stopkontak terdekat.
+narrator: Namun, bagi MC, hari itu akan menjadi titik awal dari segalanya.
+leave narrator
+jump timeline/timeline_pasca_prolog/
+[style]

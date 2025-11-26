@@ -32,16 +32,18 @@ directories/dch_directory={
 "whatsapp_pembimbing": "res://characters/whatsapp_pembimbing.dch"
 }
 directories/dtl_directory={
-"condition_1": "res://timeline_four/condition_1.dtl",
-"condition_2": "res://timeline_four/condition_2.dtl",
-"start": "res://start.dtl",
-"timeline_five": "res://timeline_five.dtl",
-"timeline_four": "res://timeline_four.dtl",
+"timeline/start": "res://timeline/start.dtl",
+"timeline/timeline_five": "res://timeline/timeline_five.dtl",
+"timeline/timeline_four": "res://timeline/timeline_four.dtl",
+"timeline/timeline_one": "res://timeline/timeline_one.dtl",
+"timeline/timeline_pasca_prolog": "res://timeline/timeline_pasca_prolog.dtl",
+"timeline/timeline_prolog": "res://timeline/timeline_prolog.dtl",
+"timeline/timeline_six": "res://timeline/timeline_six.dtl",
+"timeline/timeline_three": "res://timeline/timeline_three.dtl",
 "timeline_one": "res://raditt/timeline_one.dtl",
 "timeline_pasca_prolog": "res://raditt/timeline_pasca_prolog.dtl",
 "timeline_prolog": "res://raditt/timeline_prolog.dtl",
-"timeline_six": "res://timeline_six.dtl",
-"timeline_three": "res://timeline_three.dtl"
+"timeline_three": "res://timeline/timeline_three.dtl"
 }
 layout/style_directory={
 "": "res://styles/dialogue_characterOutside.tres",
@@ -49,9 +51,9 @@ layout/style_directory={
 "character_outside": "res://styles/character_outside.tres",
 "dialogue_characterOutside": "res://styles/dialogue_characterOutside.tres",
 "menu": "res://menu.tres",
-"percakapan whatsapp": "res://assets/background/scene_5/percakapan whatsapp.tres"
+"percakapan whatsapp": "res://assets/background/percakapan whatsapp.tres"
 }
-layout/style_list=["res://styles/dialogue_characterOutside.tres", "res://assets/background/scene_5/percakapan whatsapp.tres", "res://menu.tres", "res://styles/character_outside.tres", "res://styles/character_inside.tres"]
+layout/style_list=["res://styles/dialogue_characterOutside.tres", "res://menu.tres", "res://styles/character_outside.tres", "res://styles/character_inside.tres", "res://assets/background/percakapan whatsapp.tres"]
 layout/default_style="res://styles/dialogue_characterOutside.tres"
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.03

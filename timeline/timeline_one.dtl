@@ -1,0 +1,61 @@
+[background arg="res://assets/Gemini_Generated_Image_s7091ws7091ws709.png" fade="3.0"]
+[wait time="2.0"]
+join narrator left
+narrator: Babak berikutnya dimulai… MC memasuki Mode Menunggu—sebuah dimensi tak berujung antara harapan dan keputusasaan.
+narrator: Untuk memanggil Surat Sakti Departemen, MC harus memenangkan mini-game dadu\: mendapat angka 6.
+leave narrator
+[wait time="1.5"]
+mahasiswa: Baiklah… tinggal lempar dadu kan? Gampang kok… semoga saja.
+label lempar_dadu
+- Lempar Dadu
+set {count_throw} += 1.0
+[wait time="1.0"]
+sistem: Melakukan pengacakan dadu...
+[wait time="1.5"]
+set {selected_dadu} = [    "1",    "2",    "3",    "4",    "5",    "6" ][randi() % 6]
+[wait time="1.5"]
+if {count_throw} == 5.0:
+	join dadu (dadu 6) leftmost
+	dadu (dadu 6): Angka 6
+	[background arg="res://raditt/assets/Gemini_Generated_Image_nzifhknzifhknzif.png" fade="0.0"]
+	mahasiswa: AKHIRNYA!!! ANGKA 6!!!
+	jump dice_done
+if {selected_dadu} == "1":
+	join dadu (dadu 1) leftmost
+	dadu (dadu 1): Angka 1
+	leave dadu
+	mahasiswa: Dadu, kenapa kamu membenciku?
+	jump lempar_dadu
+elif {selected_dadu} == "2":
+	join dadu (dadu 2) leftmost
+	dadu (dadu 2): Angka 2
+	leave dadu
+	mahasiswa: Dadu, kenapa kamu membenciku?
+	jump lempar_dadu
+elif {selected_dadu} == "3":
+	join dadu (dadu 3) leftmost
+	dadu (dadu 3): Angka 3
+	leave dadu
+	mahasiswa: Dadu, kenapa kamu membenciku?
+	jump lempar_dadu
+elif {selected_dadu} == "4":
+	join dadu (dadu 4) leftmost
+	dadu (dadu 4): Angka 4
+	leave dadu
+	mahasiswa: Dadu, kenapa kamu membenciku?
+	jump lempar_dadu
+elif {selected_dadu} == "5":
+	join dadu (dadu 5) leftmost
+	dadu (dadu 5): Angka 5
+	leave dadu
+	mahasiswa: Dadu, kenapa kamu membenciku?
+	jump lempar_dadu
+else:
+	join dadu (dadu 6) leftmost
+	dadu (dadu 6): Angka 6
+	[background arg="res://raditt/assets/Gemini_Generated_Image_nzifhknzifhknzif.png" fade="0.0"]
+	mahasiswa: HOREEE ANGKA 6!!
+label dice_done
+leave dadu
+mahasiswa: Horeee! Aku akhirnya menerima email dari akademik! Waktunya melanjutkan proses PKL!
+jump timeline/timeline_three/
